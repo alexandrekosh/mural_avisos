@@ -34,5 +34,20 @@ function updatePost() {
 }
 
 function newPost() {
+    let title = document.querySelector('#title').value
+    let description = document.querySelector('#desc').value
+    
+    let post = {title, description};
 
+    const options = {
+        method: 'POST',
+        headers: new Headers({'content-type':'application/json'}),
+        body: JSON.stringify(post)
+    }
+
+    fetch('http://localhost:3000/api/new', options).then(res => {
+        updatePost()
+        document.querySelector('#title').value = ''
+        document.querySelector('#desc').value = ''
+    })
 }
