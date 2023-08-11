@@ -2,8 +2,12 @@
 
 Nesse meu primeiro projeto utilizando node, fiz um mural de avisos que adiciona posts.
 
+![](./.github/preview.png)
+
 ## tecnologias
 - Html
-- Bootstrap
 - Javascript
+- Bootstrap
 - NodeJS
+
+##
